@@ -9,88 +9,89 @@
   <link href="assets/css/styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="header-left">
-        <a class="logo-link" href="index.html">
-          <span class="material-symbols-outlined logo-icon">album</span>
-          <span class="logo-text">New Records</span>
+  <header class="cabecera-sitio">
+    <div class="contenedor cabecera-interior">
+      <div class="cabecera-izquierda">
+        <a class="enlace-logo" href="index.html">
+          <span class="material-symbols-outlined icono-logo">album</span>
+          <span class="texto-logo">New Records</span>
         </a>
-        <nav class="nav-main">
-          <a class="nav-link" href="index.html">Inicio</a>
-          <a class="nav-link active" href="categorias.html">Categorías</a>
-          <a class="nav-link" href="productos.html">Productos</a>
-          <a class="nav-link" href="contacto.html">Contacto</a>
+        <nav class="nav-principal">
+          <a class="enlace-nav" href="index.html">Inicio</a>
+          <a class="enlace-nav activo" href="categorias.html">Categorías</a>
+          <a class="enlace-nav" href="productos.html">Productos</a>
+          <a class="enlace-nav" href="contacto.html">Contacto</a>
         </nav>
       </div>
-      <button class="nav-toggle" type="button" aria-label="Abrir menú">
+      <button class="alternar-nav" type="button" aria-label="Abrir menú">
         <span class="material-symbols-outlined">menu</span>
       </button>
-      <nav class="nav-mobile" id="navMobile">
-        <a class="nav-link" href="index.html">Inicio</a>
-        <a class="nav-link active" href="categorias.html">Categorías</a>
-        <a class="nav-link" href="productos.html">Productos</a>
-        <a class="nav-link" href="contacto.html">Contacto</a>
+      <nav class="nav-movil" id="navMovil">
+        <a class="enlace-nav" href="index.html">Inicio</a>
+        <a class="enlace-nav activo" href="categorias.html">Categorías</a>
+        <a class="enlace-nav" href="productos.html">Productos</a>
+        <a class="enlace-nav" href="contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero" aria-labelledby="categories-title">
-      <div class="container">
-        <h1 id="categories-title" class="page-hero-title">Explora los géneros musicales del momento</h1>
-        <p class="page-hero-desc">
+    <section class="encabezado-pagina" aria-labelledby="titulo-categorias">
+      <div class="contenedor">
+        <h1 id="titulo-categorias" class="encabezado-pagina-titulo">Explora los géneros musicales del momento</h1>
+        <p class="encabezado-pagina-descripcion">
           Sumérgete en nuestras dimensiones auditivas más sonadas y disfruta de las mejores producciones musicales.
         </p>
       </div>
     </section>
 
-    <section class="categories-section" aria-labelledby="categories-grid-title">
-      <div class="container">
-        <div class="categories-grid">
-          <article class="category-card">
-            <div class="category-card-bg" style="background-image: url('assets/img/categorias/rock.jpg');" role="img" aria-label="Guitarra eléctrica vintage en escenario"></div>
-            <div class="category-card-overlay"></div>
-            <div class="category-card-content">
-              <div class="category-card-tag">
-                <span class="category-card-tag-line"></span>
-                <span class="category-card-tag-text">Atemporal</span>
+    <section class="seccion-categorias" aria-labelledby="grid-categorias-titulo">
+      <div class="contenedor">
+        <h2 id="grid-categorias-titulo" class="oculto-visual">Categorías disponibles</h2>
+        <div class="grid-categorias">
+          <article class="tarjeta-categoria">
+            <div class="tarjeta-categoria-fondo" style="background-image: url('assets/img/categorias/rock.jpg');" role="img" aria-label="Guitarra eléctrica vintage en escenario"></div>
+            <div class="tarjeta-categoria-superposicion"></div>
+            <div class="tarjeta-categoria-contenido">
+              <div class="tarjeta-categoria-etiqueta">
+                <span class="tarjeta-categoria-etiqueta-linea"></span>
+                <span class="tarjeta-categoria-etiqueta-texto">Atemporal</span>
               </div>
-              <h3 class="category-card-title">Rock &amp;<br/>Clásicos</h3>
-              <p class="category-card-desc">
+              <h3 class="tarjeta-categoria-titulo">Rock &amp;<br/>Clásicos</h3>
+              <p class="tarjeta-categoria-descripcion">
                 Revive a los legendarios. Del psicodelia de los 70 al rock alternativo de los 90.
               </p>
-              <a class="btn btn-primary" href="productos.html?categoria=rock">Ver productos <span class="material-symbols-outlined">arrow_forward</span></a>
+              <a class="boton boton-principal" href="productos.html?categoria=rock">Ver productos <span class="material-symbols-outlined">arrow_forward</span></a>
             </div>
           </article>
-          <article class="category-card">
-            <div class="category-card-bg" style="background-image: url('assets/img/categorias/pop.jpg');" role="img" aria-label="Club con luces neón"></div>
-            <div class="category-card-overlay"></div>
-            <div class="category-card-content">
-              <div class="category-card-tag">
-                <span class="category-card-tag-line"></span>
-                <span class="category-card-tag-text">Moderno</span>
+          <article class="tarjeta-categoria">
+            <div class="tarjeta-categoria-fondo" style="background-image: url('assets/img/categorias/pop.jpg');" role="img" aria-label="Club con luces neón"></div>
+            <div class="tarjeta-categoria-superposicion"></div>
+            <div class="tarjeta-categoria-contenido">
+              <div class="tarjeta-categoria-etiqueta">
+                <span class="tarjeta-categoria-etiqueta-linea"></span>
+                <span class="tarjeta-categoria-etiqueta-texto">Moderno</span>
               </div>
-              <h3 class="category-card-title">Pop &amp;<br/>Hits</h3>
-              <p class="category-card-desc">
+              <h3 class="tarjeta-categoria-titulo">Pop &amp;<br/>Hits</h3>
+              <p class="tarjeta-categoria-descripcion">
                 El brillo de los éxitos globales y las melodías que definen el sonido de hoy.
               </p>
-              <a class="btn btn-primary" href="productos.html?categoria=pop">Ver productos <span class="material-symbols-outlined">arrow_forward</span></a>
+              <a class="boton boton-principal" href="productos.html?categoria=pop">Ver productos <span class="material-symbols-outlined">arrow_forward</span></a>
             </div>
           </article>
-          <article class="category-card">
-            <div class="category-card-bg" style="background-image: url('assets/img/categorias/reggaeton.jpg');" role="img" aria-label="Saxofón en ambiente de jazz"></div>
-            <div class="category-card-overlay"></div>
-            <div class="category-card-content">
-              <div class="category-card-tag">
-                <span class="category-card-tag-line"></span>
-                <span class="category-card-tag-text">Latino</span>
+          <article class="tarjeta-categoria">
+            <div class="tarjeta-categoria-fondo" style="background-image: url('assets/img/categorias/reggaeton.jpg');" role="img" aria-label="Reggaeton"></div>
+            <div class="tarjeta-categoria-superposicion"></div>
+            <div class="tarjeta-categoria-contenido">
+              <div class="tarjeta-categoria-etiqueta">
+                <span class="tarjeta-categoria-etiqueta-linea"></span>
+                <span class="tarjeta-categoria-etiqueta-texto">Latino</span>
               </div>
-              <h3 class="category-card-title">Reggaeton &amp;<br/>Trap</h3>
-              <p class="category-card-desc">
+              <h3 class="tarjeta-categoria-titulo">Reggaeton &amp;<br/>Trap</h3>
+              <p class="tarjeta-categoria-descripcion">
                 El pulso de la calle y el fuego del género urbano que domina el mundo.
               </p>
-              <a class="btn btn-primary" href="productos.html?categoria=reggaeton">Ver productos <span class="material-symbols-outlined">arrow_forward</span></a>
+              <a class="boton boton-principal" href="productos.html?categoria=reggaeton">Ver productos <span class="material-symbols-outlined">arrow_forward</span></a>
             </div>
           </article>
         </div>
@@ -98,9 +99,9 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-copy">© 2026 New Records. Todos los derechos reservados.</p>
+  <footer class="pie-sitio">
+    <div class="contenedor">
+      <p class="pie-texto">© 2026 New Records. Todos los derechos reservados.</p>
     </div>
   </footer>
 

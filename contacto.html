@@ -7,72 +7,75 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <link href="assets/css/styles.css" rel="stylesheet"/>
+  <style>
+    .caja-formulario { max-width: 42rem; margin: 0 auto; }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="header-left">
-        <a class="logo-link" href="index.html">
-          <span class="material-symbols-outlined logo-icon">album</span>
-          <span class="logo-text">New Records</span>
+  <header class="cabecera-sitio">
+    <div class="contenedor cabecera-interior">
+      <div class="cabecera-izquierda">
+        <a class="enlace-logo" href="index.html">
+          <span class="material-symbols-outlined icono-logo">album</span>
+          <span class="texto-logo">New Records</span>
         </a>
-        <nav class="nav-main">
-          <a class="nav-link" href="index.html">Inicio</a>
-          <a class="nav-link" href="categorias.html">Categorías</a>
-          <a class="nav-link" href="productos.html">Productos</a>
-          <a class="nav-link active" href="contacto.html">Contacto</a>
+        <nav class="nav-principal">
+          <a class="enlace-nav" href="index.html">Inicio</a>
+          <a class="enlace-nav" href="categorias.html">Categorías</a>
+          <a class="enlace-nav" href="productos.html">Productos</a>
+          <a class="enlace-nav activo" href="contacto.html">Contacto</a>
         </nav>
       </div>
-      <button class="nav-toggle" type="button" aria-label="Abrir menú">
+      <button class="alternar-nav" type="button" aria-label="Abrir menú">
         <span class="material-symbols-outlined">menu</span>
       </button>
-      <nav class="nav-mobile" id="navMobile">
-        <a class="nav-link" href="index.html">Inicio</a>
-        <a class="nav-link" href="categorias.html">Categorías</a>
-        <a class="nav-link" href="productos.html">Productos</a>
-        <a class="nav-link active" href="contacto.html">Contacto</a>
+      <nav class="nav-movil" id="navMovil">
+        <a class="enlace-nav" href="index.html">Inicio</a>
+        <a class="enlace-nav" href="categorias.html">Categorías</a>
+        <a class="enlace-nav" href="productos.html">Productos</a>
+        <a class="enlace-nav activo" href="contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <main class="contact-main">
-    <div class="container">
-      <div class="contact-grid">
-        <section class="contact-form-wrapper" aria-labelledby="form-title">
-          <h2 id="contact-info-title" class="contact-info-title">Contáctanos</h2>
-          <form class="contact-form" id="contactForm" novalidate action="#" method="post">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="name">Nombre</label>
-                <input class="form-input" id="name" name="name" type="text" required aria-describedby="nameError"/>
-                <span class="error-message" id="nameError" role="alert"></span>
+  <main class="contacto-principal">
+    <div class="contenedor">
+      <div class="caja-formulario">
+        <section class="contenedor-formulario-contacto" aria-labelledby="titulo-formulario">
+          <h2 id="titulo-formulario" class="titulo-formulario-contacto">Contáctanos</h2>
+          <form id="contactForm" class="formulario-contacto" novalidate action="#" method="post">
+            <div class="fila-formulario">
+              <div class="grupo-formulario">
+                <label class="etiqueta-formulario" for="name">Nombre</label>
+                <input class="entrada-formulario" id="name" name="name" type="text" required aria-describedby="nameError"/>
+                <span class="mensaje-error" id="nameError" role="alert"></span>
               </div>
-              <div class="form-group">
-                <label class="form-label" for="city">Ciudad</label>
-                <input class="form-input" id="city" name="city" type="text" required aria-describedby="cityError"/>
-                <span class="error-message" id="cityError" role="alert"></span>
+              <div class="grupo-formulario">
+                <label class="etiqueta-formulario" for="city">Ciudad</label>
+                <input class="entrada-formulario" id="city" name="city" type="text" required aria-describedby="cityError"/>
+                <span class="mensaje-error" id="cityError" role="alert"></span>
               </div>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="email">Email</label>
-              <input class="form-input" id="email" name="email" type="email"  required aria-describedby="emailError"/>
-              <span class="error-message" id="emailError" role="alert"></span>
+            <div class="grupo-formulario">
+              <label class="etiqueta-formulario" for="email">Email</label>
+              <input class="entrada-formulario" id="email" name="email" type="email" required aria-describedby="emailError"/>
+              <span class="mensaje-error" id="emailError" role="alert"></span>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="subject">Asunto</label>
-              <input class="form-input" id="subject" name="subject" type="text"  required aria-describedby="subjectError"/>
-              <span class="error-message" id="subjectError" role="alert"></span>
+            <div class="grupo-formulario">
+              <label class="etiqueta-formulario" for="subject">Asunto</label>
+              <input class="entrada-formulario" id="subject" name="subject" type="text" required aria-describedby="subjectError"/>
+              <span class="mensaje-error" id="subjectError" role="alert"></span>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="description">Descripción</label>
-              <textarea class="form-textarea" id="description" name="description" rows="4" placeholder="¿En qué podemos ayudarte?" required aria-describedby="descriptionError"></textarea>
-              <span class="error-message" id="descriptionError" role="alert"></span>
+            <div class="grupo-formulario">
+              <label class="etiqueta-formulario" for="description">Descripción</label>
+              <textarea class="area-formulario" id="description" name="description" rows="4" placeholder="¿En qué podemos ayudarte?" required aria-describedby="descriptionError"></textarea>
+              <span class="mensaje-error" id="descriptionError" role="alert"></span>
             </div>
-            <button class="btn btn-primary btn-submit" type="submit">
+            <button class="boton boton-principal boton-enviar" type="submit">
               Enviar mensaje
               <span class="material-symbols-outlined">send</span>
             </button>
-            <div class="success-message" id="successMessage">
+            <div class="mensaje-exito" id="successMessage">
               <span class="material-symbols-outlined">check_circle</span>
               Mensaje recibido. Te responderemos pronto.
             </div>
@@ -82,9 +85,9 @@
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-copy">© 2026 New Records. Todos los derechos reservados.</p>
+  <footer class="pie-sitio">
+    <div class="contenedor">
+      <p class="pie-texto">© 2026 New Records. Todos los derechos reservados.</p>
     </div>
   </footer>
 
